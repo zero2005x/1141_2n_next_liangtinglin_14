@@ -1,5 +1,3 @@
-import Wrapper from "@/assets/wrappers/midterm/Shop_14";
-
 const Product_14 = ({ img_url, price, pname }) => {
   return (
     <>
