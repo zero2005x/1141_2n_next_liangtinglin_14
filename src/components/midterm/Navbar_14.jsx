@@ -1,9 +1,9 @@
 "use client";
 import React, { use } from "react";
-import Wrapper from "../../assets/wrappers/midterm/Shop_14";
+import Wrapper from "../../assets/wrappers/Navbar_14";
 import Link from "next/link";
 
-const NavbarSupaNode_14 = () => {
+const Navbar_14 = () => {
   return (
     <Wrapper>
       <header className="header">
@@ -137,6 +137,11 @@ const NavbarSupaNode_14 = () => {
                         W7-BlogLocalJson2_14
                       </Link>
                     </li>
+                    <li className="menu-item">
+                      <Link href="/demo/shop_14/node">
+                        w12_next_fullstack_14
+                      </Link>
+                    </li>
                   </ul>
                 </div>
               </li>
@@ -214,7 +219,7 @@ const NavbarSupaNode_14 = () => {
               </li>
             </ul>
             <Link
-              to="#"
+              href="#"
               id="hamburger-icon"
               className="mobile-toggler"
               aria-label="Mobile Menu"
@@ -388,4 +393,4 @@ const NavbarSupaNode_14 = () => {
   );
 };
 
-export default NavbarSupaNode_14;
+export default Navbar_14;

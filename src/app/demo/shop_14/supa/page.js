@@ -12,7 +12,7 @@ export default function Home() {
               src="/images/midterm/homepage/hats.png"
               alt="hats"
             />
-            <Link href="/demo/shop_14/node/hats" className="content">
+            <Link href="/demo/shop_14/supa/hats" className="content">
               <h1 className="title">HATS</h1>
               <span className="subtitle">SHOP NOW</span>
             </Link>
@@ -23,7 +23,7 @@ export default function Home() {
               src="/images/midterm/homepage/jackets.png"
               alt="jackets"
             />
-            <Link href="/demo/shop_14/node/jackets" className="content">
+            <Link href="/demo/shop_14/supa/jackets" className="content">
               <h1 className="title">JACKETS</h1>
               <span className="subtitle">SHOP NOW</span>
             </Link>
@@ -34,7 +34,7 @@ export default function Home() {
               src="/images/midterm/homepage/sneakers.png"
               alt="sneakers"
             />
-            <Link href="/demo/shop_14/node/sneakers" className="content">
+            <Link href="/demo/shop_14/supa/sneakers" className="content">
               <h1 className="title">SNEAKERS</h1>
               <span className="subtitle">SHOP NOW</span>
             </Link>
@@ -45,7 +45,7 @@ export default function Home() {
               src="/images/midterm/homepage/womens.png"
               alt="womens"
             />
-            <Link href="/demo/shop_14/node/womens" className="content">
+            <Link href="/demo/shop_14/supa/womens" className="content">
               <h1 className="title">WOMENS</h1>
               <span className="subtitle">SHOP NOW</span>
             </Link>
@@ -56,7 +56,7 @@ export default function Home() {
               src="/images/midterm/homepage/mens.png"
               alt="mens"
             />
-            <Link href="/demo/shop_14/node/mens" className="content">
+            <Link href="/demo/shop_14/supa/mens" className="content">
               <h1 className="title">MENS</h1>
               <span className="subtitle">SHOP NOW</span>
             </Link>
