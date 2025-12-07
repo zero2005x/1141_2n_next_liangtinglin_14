@@ -14,11 +14,24 @@ const FetchShopByCategory_14 = () => {
 
   const fetchShopFromSupa = async () => {
     try {
+      console.log("Fetching category for:", category);
+
+      // DEBUG: Check if we can read the table at all (RLS check)
+      const { data: allCats, error: allCatsError } = await supabase
+        .from("category2_14")
+        .select("*");
+      console.log("DEBUG: All categories:", allCats);
+      if (allCatsError)
+        console.error("DEBUG: Error fetching all:", allCatsError);
+
       let { data: categoryData, error: categoryError } = await supabase
         .from("category2_14")
         .select("cid")
-        .eq("cname", category)
-        .single();
+        .ilike("cname", category)
+        .maybeSingle();
+
+      console.log("Category Data:", categoryData);
+      console.log("Category Error:", categoryError);
 
       if (categoryError) throw categoryError;
 
@@ -32,10 +45,14 @@ const FetchShopByCategory_14 = () => {
         if (shopError) throw shopError;
 
         console.log("Fetched shop data:", shopData);
-        setShop_14(shopData);
+        setShop_14(shopData || []);
+      } else {
+        console.log("No category found for:", category);
+        setShop_14([]);
       }
     } catch (error) {
       console.error("Error fetching shop data:", error);
+      setShop_14([]);
     }
   };
   useEffect(() => {

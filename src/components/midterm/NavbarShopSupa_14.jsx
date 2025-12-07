@@ -10,7 +10,7 @@ const NavbarSupaNode_14 = () => {
   return (
     <Wrapper>
       <div className="header">
-        <Link href="/" className="logo-container">
+        <Link href="/demo/shop_14/supa" className="logo-container">
           <img src="/images/midterm/assets/crown.svg" />
         </Link>
         <div className="options">

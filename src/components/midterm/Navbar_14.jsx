@@ -138,7 +138,10 @@ const Navbar_14 = () => {
                       </Link>
                     </li>
                     <li className="menu-item">
-                      <Link href="/demo/shop_14/node">
+                      <Link href="/demo/shop_14/node">W11_ShopNode_14</Link>
+                    </li>
+                    <li className="menu-item">
+                      <Link href="/demo/shop_14/supa">
                         w12_next_fullstack_14
                       </Link>
                     </li>
