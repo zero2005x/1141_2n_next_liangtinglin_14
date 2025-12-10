@@ -160,11 +160,6 @@ const Navbar_14 = () => {
                       </Link>
                     </li>
                     <li className="menu-item">
-                      <Link href="/tutorials/t21_14">
-                        T21_UseEffectCodeExamplePage_14
-                      </Link>
-                    </li>
-                    <li className="menu-item">
                       <Link href="/tutorials/context/1_propdrilling_14">
                         W13_PropDrilling_14
                       </Link>

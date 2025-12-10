@@ -1,45 +1,38 @@
 "use client";
 import React from "react";
 import Wrapper from "@/assets/wrappers/Tutorials_14";
-import { data } from "../../_assets/_data/data";
+
+import {
+  PeopleContextProvider_14,
+  usePeopleContext_14,
+} from "../2_context_people_14/_context/_context";
 
 const PropDrilling_14 = () => {
-  const [people, setPeople] = React.useState(data);
-  console.log("people data:", people);
-
-  const removePerson = (id) => {
-    setPeople((people) => {
-      return people.filter((person) => person.id !== id);
-    });
-  };
-
   return (
-    <Wrapper>
-      <div className="container">
-        <h3>prop drilling</h3>
-        <List people={people} removePerson={removePerson} />
-      </div>
-    </Wrapper>
+    <PeopleContextProvider_14>
+      <Wrapper>
+        <div className="container">
+          <h3>prop drilling</h3>
+          <List />
+        </div>
+      </Wrapper>
+    </PeopleContextProvider_14>
   );
 };
 
-const List = ({ people, removePerson }) => {
+const List = () => {
+  const { people } = usePeopleContext_14();
   return (
-    <div>
+    <>
       {people.map((person) => {
-        return (
-          <SinglePerson
-            key={person.id}
-            {...person}
-            removePerson={removePerson}
-          />
-        );
+        return <SinglePerson key={person.id} {...person} />;
       })}
-    </div>
+    </>
   );
 };
 
-const SinglePerson = ({ id, name, removePerson }) => {
+const SinglePerson = ({ id, name }) => {
+  const { removePerson } = usePeopleContext_14();
   return (
     <Wrapper>
       <div className="item">
