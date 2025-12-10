@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-import Wrapper from "../assets/wrappers/Tutorials_14";
+import Wrapper from "../../assets/wrappers/Tutorials_14";
 
 const T21_14 = () => {
   const [value1, setValue1] = useState(0);

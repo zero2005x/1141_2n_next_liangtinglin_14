@@ -167,6 +167,11 @@ const Navbar_14 = () => {
                         T21_UseEffectCodeExamplePage_14
                       </Link>
                     </li>
+                    <li className="menu-item">
+                      <Link href="/tutorials/context/1_propdrilling_14">
+                        W13_PropDrilling_14
+                      </Link>
+                    </li>
                   </ul>
                 </div>
               </li>
@@ -349,13 +354,9 @@ const Navbar_14 = () => {
                 <div className="sub-menu-wrapper">
                   <ul className="sub-menu">
                     <li className="menu-item">
-                      <Link href="#">Tutorial 1</Link>
-                    </li>
-                    <li className="menu-item">
-                      <Link href="#">Tutorial 2</Link>
-                    </li>
-                    <li className="menu-item">
-                      <Link href="#">Tutorial 3</Link>
+                      <Link href="/tutorials/context/1_propdrilling_14">
+                        W13_PropDrilling_14
+                      </Link>
                     </li>
                   </ul>
                 </div>

@@ -145,18 +145,33 @@ const Navbar_14 = () => {
                 <div className="sub-menu-wrapper slideInUp">
                   <ul className="sub-menu">
                     <li className="menu-item">
-                      <Link href="/exams/tutorials/t11_14">
+                      <Link href="/tutorials/t11_14">
                         T11_ErrorExamplePage_14
                       </Link>
                     </li>
                     <li className="menu-item">
-                      <Link href="/exams/tutorials/t12_14">
+                      <Link href="/tutorials/t12_14">
                         T12_UseStateBasicPage_14
                       </Link>
                     </li>
                     <li className="menu-item">
-                      <Link href="/exams/tutorials/t21_14">
+                      <Link href="/tutorials/t21_14">
                         T21_UseEffectCodeExamplePage_14
+                      </Link>
+                    </li>
+                    <li className="menu-item">
+                      <Link href="/tutorials/t21_14">
+                        T21_UseEffectCodeExamplePage_14
+                      </Link>
+                    </li>
+                    <li className="menu-item">
+                      <Link href="/tutorials/context/1_propdrilling_14">
+                        W13_PropDrilling_14
+                      </Link>
+                    </li>
+                    <li className="menu-item">
+                      <Link href="/tutorials/context/2_context_people_14">
+                        W13_ContextPeople_14
                       </Link>
                     </li>
                   </ul>
@@ -214,7 +229,7 @@ const Navbar_14 = () => {
               </li>
             </ul>
             <Link
-              to="#"
+              href="#"
               id="hamburger-icon"
               className="mobile-toggler"
               aria-label="Mobile Menu"
