@@ -1,8 +1,10 @@
 import { FaGlobe } from "react-icons/fa6";
 import { FaMugSaucer } from "react-icons/fa6";
 import Link from "next/link";
+import { BlogContextProvicer_14, useBlogContext_14 } from "../_blogContext_14";
 
-const Blog2_14 = ({ id, img, category, title, descrip, removeItem }) => {
+const Blog2_14 = ({ id, img, category, title, descrip }) => {
+  const { removeItem } = useBlogContext_14();
   return (
     <article key={id} className="blog">
       <img src={img} alt="Coffee photo" className="img blog-img" />

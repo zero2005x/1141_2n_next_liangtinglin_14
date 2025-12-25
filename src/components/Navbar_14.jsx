@@ -137,6 +137,11 @@ const Navbar_14 = () => {
                         W7-BlogLocalJson2_14
                       </Link>
                     </li>
+                    <li className="menu-item">
+                      <Link href="/demo/blog_14/localjson_14">
+                        W13-BlogLocalJson2_14
+                      </Link>
+                    </li>
                   </ul>
                 </div>
               </li>
