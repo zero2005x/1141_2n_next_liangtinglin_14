@@ -69,21 +69,34 @@ npm run start
 
 以下為專案中已存在的核心頁面路由（實際路由以 `src/app` 為準）：
 
+### 首頁 / Home
 - `/`：首頁 / Home
-- `/tutorials/t11_14`, `/tutorials/t12_14`, `/tutorials/t21_14`：教學頁 / Tutorials
-- `/tutorials/context/1_propdrilling_14`, `/tutorials/context/2_context_people_14`
-- `/demo/grocery_14`
-- `/demo/blog_14/localjson_14`, `/demo/blog_14/localjson2_context_14`
-- `/demo/shop_14/node`（含動態路由 `/demo/shop_14/node/[category]`）
-- `/demo/shop_14/supa`（含動態路由 `/demo/shop_14/supa/[category]`）
-- `/exams/midterm` 與：
-  - `/exams/midterm/hats_14`
-  - `/exams/midterm/jackets_14`
-  - `/exams/midterm/mens_14`
-  - `/exams/midterm/sneakers_14`
-  - `/exams/midterm/womens_14`
-  - `/exams/midterm/p1_14`
-  - `/exams/midterm/p2_14`
+
+### Demo 區塊 / Demo Section
+- `/demo/grocery_14`：Grocery 範例
+- `/demo/blog_14/localjson_14`：Blog (Local JSON)
+- `/demo/blog_14/localjson2_context_14`：Blog (Context API)
+- `/demo/shop_14/node`：Shop (Node.js 後端)
+- `/demo/shop_14/supa`：Shop (Supabase 後端)
+
+### Tutorial 區塊 / Tutorial Section
+- `/tutorials/t11_14`：T11_ErrorExamplePage_14
+- `/tutorials/t12_14`：T12_UseStateBasicPage_14
+- `/tutorials/t21_14`：T21_UseEffectCodeExamplePage_14
+- `/tutorials/context/1_propdrilling_14`：W13_PropDrilling_14
+- `/tutorials/context/2_context_people_14`：W13_ContextPeople_14
+
+### Midterm 區塊 / Midterm Section
+- `/exams/midterm`：Midterm 首頁（含分類圖片連結）
+- `/exams/midterm/p1_14`：P1_StaticPage_14
+- `/exams/midterm/p2_14`：P2_StaticPage_14
+- `/exams/midterm/hats_14`：Hats 分類頁（下學期教學用）
+- `/exams/midterm/jackets_14`：Jackets 分類頁（下學期教學用）
+- `/exams/midterm/mens_14`：Mens 分類頁（下學期教學用）
+- `/exams/midterm/sneakers_14`：Sneakers 分類頁（下學期教學用）
+- `/exams/midterm/womens_14`：Womens 分類頁（下學期教學用）
+
+> **備註 / Note**: Hats、Jackets、Mens、Sneakers、Womens 等分類頁目前已從 Navbar 移除，預留給下學期教學使用。可透過 `/exams/midterm` 首頁的圖片連結進入。
 
 These are the main routes currently implemented (source of truth is `src/app`).
 
@@ -93,11 +106,26 @@ These are the main routes currently implemented (source of truth is `src/app`).
 
 為了避免路由不一致，本專案以首頁 navbar 的配置為主（並同步整理其他 navbar）：
 
-- 全站（Root group）使用：`src/app/(root)/layout.js` → `src/components/Navbar_14.jsx`
-- Shop demo 區塊使用：`src/app/demo/shop_14/_components/NavbarSupaNode_14.jsx`
-- Midterm 區塊也有獨立 navbar：`src/components/midterm/Navbar_14.jsx`
+| Layout 位置 | Navbar 元件 | 說明 |
+|------------|-------------|------|
+| `src/app/(root)/layout.js` | `src/components/Navbar_14.jsx` | 全站主 Navbar |
+| `src/app/exams/midterm/layout.js` | `src/components/midterm/NavbarShop_14.jsx` | Midterm 區塊 |
+| `src/app/demo/shop_14/node/layout.js` | `src/components/midterm/NavbarShopNode_14.jsx` | Shop Node 區塊 |
+| `src/app/demo/shop_14/supa/layout.js` | `src/components/midterm/NavbarShopSupa_14.jsx` | Shop Supa 區塊 |
 
-To keep routing consistent, the homepage navbar acts as the “canonical” route set and other navbars are aligned accordingly.
+To keep routing consistent, the homepage navbar acts as the "canonical" route set and other navbars are aligned accordingly.
+
+---
+
+## styled-components SSR 設定 / styled-components SSR Setup
+
+本專案使用 `styled-components` 搭配 Next.js App Router，為避免 **Flash of Unstyled Content (FOUC)**，已設定 `StyledComponentsRegistry`：
+
+- 設定檔：`src/lib/registry.js`
+- 所有獨立 layout 都需要用 `<StyledComponentsRegistry>` 包裹內容
+- `next.config.mjs` 已設定 `compiler: { styledComponents: true }`
+
+This project uses `styled-components` with Next.js App Router. To prevent FOUC, `StyledComponentsRegistry` is configured in `src/lib/registry.js` and wraps content in all independent layouts.
 
 ---
 

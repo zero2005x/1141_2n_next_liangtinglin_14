@@ -45,7 +45,7 @@ const NavbarShopNode_14 = () => {
                 </div>
                 <div className="cart-item">
                   <img
-                    src="/images/midterm/hats/blue-jean-jacket.png"
+                    src="/images/midterm/jackets/blue-jean-jacket.png"
                     alt="item"
                   />
                   <div className="item-details">

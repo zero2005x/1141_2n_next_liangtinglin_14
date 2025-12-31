@@ -12,10 +12,10 @@ const P2_StaticPage_14 = () => {
               src="/images/midterm/homepage/hats.png"
               alt="hats"
             />
-            <a href="/exams/midterm/hats_14" className="content">
+            <Link href="/exams/midterm/hats_14" className="content">
               <h1 className="title">HATS</h1>
               <span className="subtitle">SHOP NOW</span>
-            </a>
+            </Link>
           </div>
           <div className="menu-item">
             <img
@@ -23,10 +23,10 @@ const P2_StaticPage_14 = () => {
               src="/images/midterm/homepage/jackets.png"
               alt="jackets"
             />
-            <a href="/exams/midterm/jackets_14" className="content">
+            <Link href="/exams/midterm/jackets_14" className="content">
               <h1 className="title">JACKETS</h1>
               <span className="subtitle">SHOP NOW</span>
-            </a>
+            </Link>
           </div>
           <div className="menu-item">
             <img
@@ -34,10 +34,10 @@ const P2_StaticPage_14 = () => {
               src="/images/midterm/homepage/sneakers.png"
               alt="sneakers"
             />
-            <a href="/exams/midterm/sneakers_14" className="content">
+            <Link href="/exams/midterm/sneakers_14" className="content">
               <h1 className="title">SNEAKERS</h1>
               <span className="subtitle">SHOP NOW</span>
-            </a>
+            </Link>
           </div>
           <div className="large menu-item">
             <img
@@ -45,10 +45,10 @@ const P2_StaticPage_14 = () => {
               src="/images/midterm/homepage/womens.png"
               alt="womens"
             />
-            <a href="/exams/midterm/womens_14" className="content">
+            <Link href="/exams/midterm/womens_14" className="content">
               <h1 className="title">WOMENS</h1>
               <span className="subtitle">SHOP NOW</span>
-            </a>
+            </Link>
           </div>
           <div className="large menu-item">
             <img
@@ -56,10 +56,10 @@ const P2_StaticPage_14 = () => {
               src="/images/midterm/homepage/mens.png"
               alt="mens"
             />
-            <a href="/exams/midterm/mens_14" className="content">
+            <Link href="/exams/midterm/mens_14" className="content">
               <h1 className="title">MENS</h1>
               <span className="subtitle">SHOP NOW</span>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

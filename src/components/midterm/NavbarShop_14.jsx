@@ -2,30 +2,32 @@
 
 import Wrapper from "@/assets/wrappers/midterm/Shop_14";
 import Link from "next/link";
+import { useState } from "react";
 
 const NavbarShop_14 = () => {
+  const [showCart, setShowCart] = useState(false);
+
   function cartToggle() {
-    const dropdown = document.querySelector(".cart-dropdown");
-    dropdown?.classList.toggle("show");
+    setShowCart(!showCart);
   }
 
   return (
     <Wrapper>
       <div className="header">
-        <Link href="/" className="logo-container">
+        <Link href="/exams/midterm" className="logo-container">
           <img src="/images/midterm/assets/crown.svg" />
         </Link>
         <div className="options">
           <Link href="/" className="option">
             TKUDemo
           </Link>
-          <Link href="./overview.html" className="option">
+          <Link href="/exams/midterm" className="option">
             Shop
           </Link>
-          <Link href="/shop" className="option">
+          <Link href="/exams/midterm" className="option">
             Contact
           </Link>
-          <Link href="/signin" className="option">
+          <Link href="/exams/midterm" className="option">
             Sign In
           </Link>
           <div className="cart-icon" onClick={cartToggle}>
@@ -35,7 +37,7 @@ const NavbarShop_14 = () => {
               alt=""
             />
           </div>
-          <div className="cart-dropdown">
+          <div className={`cart-dropdown ${showCart ? "show" : ""}`}>
             <div className="cart-items">
               <div className="cart-item">
                 <img src="/images/midterm/hats/brown-cowboy.png" alt="item" />
@@ -46,7 +48,7 @@ const NavbarShop_14 = () => {
               </div>
               <div className="cart-item">
                 <img
-                  src="/images/midterm/hats/blue-jean-jacket.png"
+                  src="/images/midterm/jackets/blue-jean-jacket.png"
                   alt="item"
                 />
                 <div className="item-details">

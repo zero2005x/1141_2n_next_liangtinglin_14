@@ -1,9 +1,19 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Wrapper from "../assets/wrappers/Navbar_14";
 import Link from "next/link";
 
 const Navbar_14 = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <Wrapper>
       <header className="header">
@@ -90,21 +100,6 @@ const Navbar_14 = () => {
                       <Link href="/exams/midterm">Midterm_HomePage_14</Link>
                     </li>
                     <li className="menu-item">
-                      <Link href="/exams/midterm/hats_14">Hats_14</Link>
-                    </li>
-                    <li className="menu-item">
-                      <Link href="/exams/midterm/jackets_14">Jackets_14</Link>
-                    </li>
-                    <li className="menu-item">
-                      <Link href="/exams/midterm/mens_14">Mens_14</Link>
-                    </li>
-                    <li className="menu-item">
-                      <Link href="/exams/midterm/sneakers_14">Sneakers_14</Link>
-                    </li>
-                    <li className="menu-item">
-                      <Link href="/exams/midterm/womens_14">Womens_14</Link>
-                    </li>
-                    <li className="menu-item">
                       <Link href="/exams/midterm/p1_14">P1_StaticPage_14</Link>
                     </li>
                     <li className="menu-item">
@@ -125,15 +120,23 @@ const Navbar_14 = () => {
               id="hamburger-icon"
               className="mobile-toggler"
               aria-label="Mobile Menu"
+              onClick={toggleMobileMenu}
             >
-              <i className="fas fa-bars"></i>
+              <i
+                className={isMobileMenuOpen ? "fas fa-times" : "fas fa-bars"}
+              ></i>
             </button>
           </div>
 
-          <div id="mobile-menu" className="mobile-menu hidden slideInDown">
+          <div
+            id="mobile-menu"
+            className={`mobile-menu slideInDown ${
+              isMobileMenuOpen ? "" : "hidden"
+            }`}
+          >
             <ul>
               <li className="menu-item">
-                <Link href="/" className="active">
+                <Link href="/" className="active" onClick={closeMobileMenu}>
                   Home
                 </Link>
               </li>
@@ -142,23 +145,35 @@ const Navbar_14 = () => {
                 <div className="sub-menu-wrapper">
                   <ul className="sub-menu">
                     <li className="menu-item">
-                      <Link href="/demo/grocery_14">Grocery_14</Link>
+                      <Link href="/demo/grocery_14" onClick={closeMobileMenu}>
+                        Grocery_14
+                      </Link>
                     </li>
                     <li className="menu-item">
-                      <Link href="/demo/blog_14/localjson_14">
+                      <Link
+                        href="/demo/blog_14/localjson_14"
+                        onClick={closeMobileMenu}
+                      >
                         BlogLocalJson_14
                       </Link>
                     </li>
                     <li className="menu-item">
-                      <Link href="/demo/blog_14/localjson2_context_14">
+                      <Link
+                        href="/demo/blog_14/localjson2_context_14"
+                        onClick={closeMobileMenu}
+                      >
                         BlogLocalJson2_Context_14
                       </Link>
                     </li>
                     <li className="menu-item">
-                      <Link href="/demo/shop_14/node">ShopNode_14</Link>
+                      <Link href="/demo/shop_14/node" onClick={closeMobileMenu}>
+                        ShopNode_14
+                      </Link>
                     </li>
                     <li className="menu-item">
-                      <Link href="/demo/shop_14/supa">ShopSupa_14</Link>
+                      <Link href="/demo/shop_14/supa" onClick={closeMobileMenu}>
+                        ShopSupa_14
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -168,27 +183,33 @@ const Navbar_14 = () => {
                 <div className="sub-menu-wrapper">
                   <ul className="sub-menu">
                     <li className="menu-item">
-                      <Link href="/tutorials/t11_14">
+                      <Link href="/tutorials/t11_14" onClick={closeMobileMenu}>
                         T11_ErrorExamplePage_14
                       </Link>
                     </li>
                     <li className="menu-item">
-                      <Link href="/tutorials/t12_14">
+                      <Link href="/tutorials/t12_14" onClick={closeMobileMenu}>
                         T12_UseStateBasicPage_14
                       </Link>
                     </li>
                     <li className="menu-item">
-                      <Link href="/tutorials/t21_14">
+                      <Link href="/tutorials/t21_14" onClick={closeMobileMenu}>
                         T21_UseEffectCodeExamplePage_14
                       </Link>
                     </li>
                     <li className="menu-item">
-                      <Link href="/tutorials/context/1_propdrilling_14">
+                      <Link
+                        href="/tutorials/context/1_propdrilling_14"
+                        onClick={closeMobileMenu}
+                      >
                         W13_PropDrilling_14
                       </Link>
                     </li>
                     <li className="menu-item">
-                      <Link href="/tutorials/context/2_context_people_14">
+                      <Link
+                        href="/tutorials/context/2_context_people_14"
+                        onClick={closeMobileMenu}
+                      >
                         W13_ContextPeople_14
                       </Link>
                     </li>
@@ -200,34 +221,35 @@ const Navbar_14 = () => {
                 <div className="sub-menu-wrapper">
                   <ul className="sub-menu">
                     <li className="menu-item">
-                      <Link href="/exams/midterm">Midterm_HomePage_14</Link>
+                      <Link href="/exams/midterm" onClick={closeMobileMenu}>
+                        Midterm_HomePage_14
+                      </Link>
                     </li>
                     <li className="menu-item">
-                      <Link href="/exams/midterm/hats_14">Hats_14</Link>
+                      <Link
+                        href="/exams/midterm/p1_14"
+                        onClick={closeMobileMenu}
+                      >
+                        P1_StaticPage_14
+                      </Link>
                     </li>
                     <li className="menu-item">
-                      <Link href="/exams/midterm/jackets_14">Jackets_14</Link>
+                      <Link
+                        href="/exams/midterm/p2_14"
+                        onClick={closeMobileMenu}
+                      >
+                        P2_StaticPage_14
+                      </Link>
                     </li>
                     <li className="menu-item">
-                      <Link href="/exams/midterm/mens_14">Mens_14</Link>
+                      <Link href="/demo/shop_14/node" onClick={closeMobileMenu}>
+                        P3_NodePage_14
+                      </Link>
                     </li>
                     <li className="menu-item">
-                      <Link href="/exams/midterm/sneakers_14">Sneakers_14</Link>
-                    </li>
-                    <li className="menu-item">
-                      <Link href="/exams/midterm/womens_14">Womens_14</Link>
-                    </li>
-                    <li className="menu-item">
-                      <Link href="/exams/midterm/p1_14">P1_StaticPage_14</Link>
-                    </li>
-                    <li className="menu-item">
-                      <Link href="/exams/midterm/p2_14">P2_StaticPage_14</Link>
-                    </li>
-                    <li className="menu-item">
-                      <Link href="/demo/shop_14/node">P3_NodePage_14</Link>
-                    </li>
-                    <li className="menu-item">
-                      <Link href="/demo/shop_14/supa">P4_SupaPage_14</Link>
+                      <Link href="/demo/shop_14/supa" onClick={closeMobileMenu}>
+                        P4_SupaPage_14
+                      </Link>
                     </li>
                   </ul>
                 </div>
