@@ -25,33 +25,38 @@ const Navbar_14 = () => {
                 </Link>
               </li>
               <li className="menu-item dropdown">
-                <Link href="/demo/blog_14/localjson_14">Demo +</Link>
+                <Link href="#">Demo +</Link>
                 <div className="sub-menu-wrapper slideInUp">
                   <ul className="sub-menu">
                     <li className="menu-item">
-                      <Link href="/demo/grocery_14">Grocery_14</Link>
+                      <Link href="/booklist_14">W2-BookList_14</Link>
                     </li>
                     <li className="menu-item">
-                      <Link href="/demo/blog_14/localjson_14">
-                        BlogLocalJson_14
-                      </Link>
+                      <Link href="/static_14">W3-BlogStatic_14</Link>
                     </li>
                     <li className="menu-item">
-                      <Link href="/demo/blog_14/localjson2_context_14">
-                        BlogLocalJson2_Context_14
-                      </Link>
+                      <Link href="/localjson_14">W3-BlogLocalJson_14</Link>
                     </li>
                     <li className="menu-item">
-                      <Link href="/demo/shop_14/node">ShopNode_14</Link>
+                      <Link href="/node_14">W4-BlogNode_14</Link>
                     </li>
                     <li className="menu-item">
-                      <Link href="/demo/shop_14/supa">ShopSupa_14</Link>
+                      <Link href="#">W6-BlogSupa_14</Link>
+                    </li>
+                    <li className="menu-item">
+                      <Link href="/localjson2_14">W7-BlogLocalJson2_14</Link>
+                    </li>
+                    <li className="menu-item">
+                      <Link href="/demo/shop_14/node">W11-ShopNode_14</Link>
+                    </li>
+                    <li className="menu-item">
+                      <Link href="/demo/shop_14/supa">W12-ShopSupa_14</Link>
                     </li>
                   </ul>
                 </div>
               </li>
               <li className="menu-item dropdown">
-                <Link href="/tutorials/t11_14">Tutorial +</Link>
+                <Link href="#">Tutorials +</Link>
                 <div className="sub-menu-wrapper slideInUp">
                   <ul className="sub-menu">
                     <li className="menu-item">
@@ -61,12 +66,7 @@ const Navbar_14 = () => {
                     </li>
                     <li className="menu-item">
                       <Link href="/tutorials/t12_14">
-                        T12_UseStateBasicPage_14
-                      </Link>
-                    </li>
-                    <li className="menu-item">
-                      <Link href="/tutorials/t21_14">
-                        T21_UseEffectCodeExamplePage_14
+                        T12_UseStateBasicsPage_14
                       </Link>
                     </li>
                     <li className="menu-item">
@@ -83,41 +83,26 @@ const Navbar_14 = () => {
                 </div>
               </li>
               <li className="menu-item dropdown">
-                <Link href="/exams/midterm">Midterm +</Link>
+                <Link href="#">Midterm +</Link>
                 <div className="sub-menu-wrapper slideInUp">
                   <ul className="sub-menu">
-                    <li className="menu-item">
-                      <Link href="/exams/midterm">Midterm_HomePage_14</Link>
-                    </li>
-                    <li className="menu-item">
-                      <Link href="/exams/midterm/hats_14">Hats_14</Link>
-                    </li>
-                    <li className="menu-item">
-                      <Link href="/exams/midterm/jackets_14">Jackets_14</Link>
-                    </li>
-                    <li className="menu-item">
-                      <Link href="/exams/midterm/mens_14">Mens_14</Link>
-                    </li>
-                    <li className="menu-item">
-                      <Link href="/exams/midterm/sneakers_14">Sneakers_14</Link>
-                    </li>
-                    <li className="menu-item">
-                      <Link href="/exams/midterm/womens_14">Womens_14</Link>
-                    </li>
                     <li className="menu-item">
                       <Link href="/exams/midterm/p1_14">P1_StaticPage_14</Link>
                     </li>
                     <li className="menu-item">
-                      <Link href="/exams/midterm/p2_14">P2_StaticPage_14</Link>
+                      <Link href="/exams/midterm/p2_14">P2_StaticPage2_14</Link>
                     </li>
                     <li className="menu-item">
-                      <Link href="/demo/shop_14/node">P3_NodePage_14</Link>
+                      <Link href="/exams/midterm/p3_14">P3_NodePage_14</Link>
                     </li>
                     <li className="menu-item">
-                      <Link href="/demo/shop_14/supa">P4_SupaPage_14</Link>
+                      <Link href="/exams/midterm/p4_14">P4_SupaPage_14</Link>
                     </li>
                   </ul>
                 </div>
+              </li>
+              <li className="menu-item">
+                <Link href="#">Contact</Link>
               </li>
             </ul>
             <button
@@ -138,33 +123,38 @@ const Navbar_14 = () => {
                 </Link>
               </li>
               <li className="menu-item dropdown">
-                <Link href="/demo/blog_14/localjson_14">Demo +</Link>
+                <Link href="#">Demo +</Link>
                 <div className="sub-menu-wrapper">
                   <ul className="sub-menu">
                     <li className="menu-item">
-                      <Link href="/demo/grocery_14">Grocery_14</Link>
+                      <Link href="/booklist_14">W2-BookList_14</Link>
                     </li>
                     <li className="menu-item">
-                      <Link href="/demo/blog_14/localjson_14">
-                        BlogLocalJson_14
-                      </Link>
+                      <Link href="/static_14">W3-BlogStatic_14</Link>
                     </li>
                     <li className="menu-item">
-                      <Link href="/demo/blog_14/localjson2_context_14">
-                        BlogLocalJson2_Context_14
-                      </Link>
+                      <Link href="/localjson_14">W3-BlogLocalJson_14</Link>
                     </li>
                     <li className="menu-item">
-                      <Link href="/demo/shop_14/node">ShopNode_14</Link>
+                      <Link href="/node_14">W4-BlogNode_14</Link>
                     </li>
                     <li className="menu-item">
-                      <Link href="/demo/shop_14/supa">ShopSupa_14</Link>
+                      <Link href="#">W6-BlogSupa_14</Link>
+                    </li>
+                    <li className="menu-item">
+                      <Link href="/localjson2_14">W7-BlogLocalJson2_14</Link>
+                    </li>
+                    <li className="menu-item">
+                      <Link href="/demo/shop_14/node">W11-ShopNode_14</Link>
+                    </li>
+                    <li className="menu-item">
+                      <Link href="/demo/shop_14/supa">W12-ShopSupa_14</Link>
                     </li>
                   </ul>
                 </div>
               </li>
               <li className="menu-item dropdown">
-                <Link href="/tutorials/t11_14">Tutorial +</Link>
+                <Link href="#">Tutorials +</Link>
                 <div className="sub-menu-wrapper">
                   <ul className="sub-menu">
                     <li className="menu-item">
@@ -174,12 +164,7 @@ const Navbar_14 = () => {
                     </li>
                     <li className="menu-item">
                       <Link href="/tutorials/t12_14">
-                        T12_UseStateBasicPage_14
-                      </Link>
-                    </li>
-                    <li className="menu-item">
-                      <Link href="/tutorials/t21_14">
-                        T21_UseEffectCodeExamplePage_14
+                        T12_UseStateBasicsPage_14
                       </Link>
                     </li>
                     <li className="menu-item">
@@ -196,41 +181,26 @@ const Navbar_14 = () => {
                 </div>
               </li>
               <li className="menu-item dropdown">
-                <Link href="/exams/midterm">Midterm +</Link>
+                <Link href="#">Midterm +</Link>
                 <div className="sub-menu-wrapper">
                   <ul className="sub-menu">
-                    <li className="menu-item">
-                      <Link href="/exams/midterm">Midterm_HomePage_14</Link>
-                    </li>
-                    <li className="menu-item">
-                      <Link href="/exams/midterm/hats_14">Hats_14</Link>
-                    </li>
-                    <li className="menu-item">
-                      <Link href="/exams/midterm/jackets_14">Jackets_14</Link>
-                    </li>
-                    <li className="menu-item">
-                      <Link href="/exams/midterm/mens_14">Mens_14</Link>
-                    </li>
-                    <li className="menu-item">
-                      <Link href="/exams/midterm/sneakers_14">Sneakers_14</Link>
-                    </li>
-                    <li className="menu-item">
-                      <Link href="/exams/midterm/womens_14">Womens_14</Link>
-                    </li>
                     <li className="menu-item">
                       <Link href="/exams/midterm/p1_14">P1_StaticPage_14</Link>
                     </li>
                     <li className="menu-item">
-                      <Link href="/exams/midterm/p2_14">P2_StaticPage_14</Link>
+                      <Link href="/exams/midterm/p2_14">P2_StaticPage2_14</Link>
                     </li>
                     <li className="menu-item">
-                      <Link href="/demo/shop_14/node">P3_NodePage_14</Link>
+                      <Link href="/exams/midterm/p3_14">P3_NodePage_14</Link>
                     </li>
                     <li className="menu-item">
-                      <Link href="/demo/shop_14/supa">P4_SupaPage_14</Link>
+                      <Link href="/exams/midterm/p4_14">P4_SupaPage_14</Link>
                     </li>
                   </ul>
                 </div>
+              </li>
+              <li className="menu-item">
+                <Link href="#">Contact</Link>
               </li>
             </ul>
           </div>
